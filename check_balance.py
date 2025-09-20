@@ -1,5 +1,6 @@
 BALANCE_FILE = "balance.txt"
 
+# gets the balance value from balance.txt
 def read_balance():
     try:
         with open(BALANCE_FILE, "r") as f:
@@ -9,7 +10,6 @@ def read_balance():
     except ValueError:
         return 0.0
 
+# displays the balance value
 def check_balance():
     return read_balance()
-
-read_balance()
