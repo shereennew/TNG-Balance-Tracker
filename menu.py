@@ -1,15 +1,3 @@
-def check_bal ():
-    pass
-def top_up ():
-    pass
-def make_payment ():
-    pass
-def trans_history ():
-    pass
-
-balance = 0.00
-transaction = []
-
 def menu () :
     
     while True :
