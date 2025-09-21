@@ -5,7 +5,7 @@ from transaction_history import show_history as trans_history
 from pin import set_pin, verify_pin, change_pin
 
 def menu () :
-    print("Welcome to TNG Balance Tracker!")
+    print("🌟 Welcome to TNG Balance Tracker! 🌟")
     if not verify_pin():
         choice = input("No PIN or incorrect. Do you want to set one? (y/n): ")
         if choice.lower() == "y":
@@ -16,8 +16,8 @@ def menu () :
 
     while True :
         
-        print ("Welcome to TNG Balance Tracker! \n")    
-        print ("1. Check Balance\n2. Top-up\n3. Make Payment\n4. Transaction History\n5. Change PIN\n6. Exit\n")
+        print ("🌟 Welcome to TNG Balance Tracker! 🌟\n")    
+        print ("1. 💰 Check Balance\n2. ➕ Top-up\n3. 💸 Make Payment\n4. 📜 Transaction History\n5. 🔑 Change PIN\n6. 👋 Exit\n")
 
         user_input = input("Enter Choice: ")
         if user_input == "1" :
@@ -31,10 +31,10 @@ def menu () :
         elif user_input == "5" :
             change_pin()
         elif user_input == "6" :
-            print ("Thank you for using TNG Balance Tracker!")
+            print ("Thank you for using TNG Balance Tracker!👋")
             break 
         else :
-            print ("Invalid Choice. Please Try Again.")
+            print ("Invalid Choice. Please Try Again.❌")
             continue
 
         while True :
@@ -42,10 +42,10 @@ def menu () :
             if cont.lower() == "y":
                 break
             elif cont.lower() == "n":
-                print ("Thank you for using TNG Balance Tracker!")
+                print ("Thank you for using TNG Balance Tracker!👋")
                 return
             else :
-                print ("Invalid Input. Please Try Again.")
+                print ("Invalid Input. Please Try Again.❌")
                 continue
 
 if __name__ == "__main__":
