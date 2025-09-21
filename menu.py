@@ -1,5 +1,5 @@
 def check_bal ():
-    print ("HI")   
+    pass
 def top_up ():
     pass
 def make_payment ():
