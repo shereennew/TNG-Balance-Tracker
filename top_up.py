@@ -1,4 +1,5 @@
 from check_balance import read_balance  
+from transaction_history import add_transaction
 
 BALANCE_FILE = "balance.txt"  
 
