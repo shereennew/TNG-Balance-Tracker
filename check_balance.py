@@ -19,4 +19,6 @@ def check_low_balance():
     balance = read_balance()
     if balance < 10:
         print("⚠️ Warning: Your balance is below RM10. Please top up soon!")
+    else:
+        print("✅ You have enough. Remember to spend wisely. 😊")
 
