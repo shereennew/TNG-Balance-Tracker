@@ -1,14 +1,7 @@
-def check_bal ():
-    pass
-def top_up ():
-    pass
-def make_payment ():
-    pass
-def trans_history ():
-    pass
-
-balance = 0.00
-transaction = []
+from check_balance import check_balance as check_bal
+from top_up import top_up
+from deduct_balance import deduct_balance as make_payment
+from transaction_history import show_history as trans_history
 
 def menu () :
     
@@ -19,7 +12,7 @@ def menu () :
 
         user_input = input("Enter Choice: ")
         if user_input == "1" :
-            check_bal()
+            print("Your balance is: ", check_bal())
         elif user_input == "2" :
             top_up() 
         elif user_input == "3" :
