@@ -2,7 +2,7 @@ from datetime import datetime
 
 transactions = [] #store all history here
 
-def log_transaction(kind, amount, balance): #save a transaction record with datetime
+def add_transaction(kind, amount, balance): #save a transaction record with datetime
     time_now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     record = f"{time_now} | {kind.upper()}: RM{amount:.2f}, Balance: RM{balance:.2f}"
     transactions.append(record)
