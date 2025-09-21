@@ -1,6 +1,6 @@
 from check_balance import read_balance
 from top_up import save_balance   
-from transaction_history import add_transaction
+from transaction_history import add_transaction #to save transaction
 
 def deduct_balance():
     balance = read_balance()  
