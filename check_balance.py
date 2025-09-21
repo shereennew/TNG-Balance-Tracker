@@ -15,6 +15,8 @@ def check_balance():
     return read_balance()
 
 #low balance warning
-def check_low_balance(balance):
+def check_low_balance():
+    balance = read_balance()
     if balance < 10:
         print("⚠️ Warning: Your balance is below RM10. Please top up soon!")
+
