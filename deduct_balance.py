@@ -16,6 +16,7 @@ def deduct_balance():
         
         balance -= amount
         save_balance(balance)
+        add_transaction("PAYMENT", amount, balance) #to save transaction history
         print(f" Payment successful! New balance: RM {balance:.2f}")
     
     except ValueError:
