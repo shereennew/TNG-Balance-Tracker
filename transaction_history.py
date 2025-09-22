@@ -10,7 +10,7 @@ def add_transaction(kind, amount, balance):
         f.write(record + "\n")
 
 def show_history():
-    """Display all past transactions"""
+    #Display all past transactions
     print("\nTransaction History:")
     try:
         with open(HISTORY_FILE, "r") as f:   # read mode
