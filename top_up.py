@@ -14,6 +14,7 @@ def top_up():
         if amount > 0:
             balance += amount
             save_balance(balance)
+            add_transaction("TOP-UP", amount, balance)
             print(f"Top-up successful! New balance: RM {balance:.2f}")
         else:
             print("Invalid amount. Please enter a positive number.")
