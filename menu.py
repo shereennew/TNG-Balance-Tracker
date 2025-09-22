@@ -22,7 +22,9 @@ def menu () :
 
         user_input = input("Enter Choice: ")
         if user_input == "1" :
-            print("Your balance is: RM", check_bal(), check_low_balance())
+            balance = check_bal()
+            print(f"Your balance is: RM {balance:.2f}")
+            check_low_balance()
         elif user_input == "2" :
             top_up() 
         elif user_input == "3" :
