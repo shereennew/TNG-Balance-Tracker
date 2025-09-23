@@ -1,7 +1,7 @@
 from check_balance import check_balance as check_bal
 from top_up import top_up
 from deduct_balance import deduct_balance as make_payment
-from transaction_history import show_history as trans_history
+from transaction_history import show_history as trans_history, add_transaction
 
 def menu () :
     
